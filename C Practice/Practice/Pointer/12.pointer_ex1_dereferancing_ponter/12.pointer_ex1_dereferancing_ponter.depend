@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1552747963 source:c:\users\abirmoy\documents\c lang\12.pointer_ex1_dereferancing_ponter\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stddef.h>
+

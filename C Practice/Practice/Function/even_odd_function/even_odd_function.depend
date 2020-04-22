@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1558121149 source:c:\users\abirmoy\documents\c lang\practice\function\even_odd_function\main.c
+	<stdio.h>
+	<stdbool.h>
+

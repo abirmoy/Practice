@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1552800920 source:c:\users\abirmoy\documents\c lang\12.4.pointer_ex1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+

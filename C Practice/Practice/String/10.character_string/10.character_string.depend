@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1551221857 source:c:\users\abirmoy\documents\c lang\10.character_string\main.c
+	<stdio.h>
+	<string.h>
+

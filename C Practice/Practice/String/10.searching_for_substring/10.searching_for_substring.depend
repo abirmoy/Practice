@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1551394608 source:c:\users\abirmoy\documents\c lang\10.searching_for_substring\main.c
+	<stdio.h>
+	<string.h>
+

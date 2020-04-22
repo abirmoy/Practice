@@ -1,0 +1,89 @@
+body {
+    background-color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body h1 {
+    color:#fff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1.9em;
+  }
+  #title {
+    color: green;
+}
+
+form {
+    text-align: center;
+    border:3px  #f1f1f1;
+}
+
+
+input[type=email], input[type=password] {
+    width:25%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    
+    
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white; 
+    cursor: pointer;
+    width:25%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border: none;
+    
+}
+button:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    
+  }
+  .new {
+    margin: 4em 0 1em 0;
+  }
+  .new h3{
+    float:center;
+  }
+  .new h3 a,.new h4 a{
+    color:#111818;
+    font-weight: 400;
+    font-size: 1em;
+  }
+  .new h3 a:hover,.new h4 a:hover{
+    text-decoration: underline;
+  }
+  .new h4{
+    float:center;
+  }
+/*---------------*/
+.copy-right {
+    padding: 3em 1em;
+  }
+  .copy-right p {
+      color: rgb(22, 10, 10);
+      font-size: 1em;
+      font-weight:400;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .copy-right p a {
+        color: #323542;
+  }
+  .copy-right p a:hover {
+      text-decoration: underline;
+  }

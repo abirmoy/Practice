@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1551307083 source:c:\users\abirmoy\documents\c lang\10.strlen_functionex1\main.c
+	<stdio.h>
+	<string.h>
+

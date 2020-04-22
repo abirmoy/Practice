@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1554919684 source:c:\users\abirmoy\documents\c lang\practice\find_hypotenuse_of_triangle\main.c
+	<stdio.h>
+	<math.h>
+
