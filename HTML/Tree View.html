@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <title>{{title}}</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+</style>
+</head>
+<body>
+<h1>{{title}}</h1>
+<p><a href="https://www.w3schools.com/howto/howto_js_treeview.asp">Source w3schools</a></p>
+
+<ul id="myUL">
+  <li><span class="caret">System</span>
+    <ul class="nested">
+      <li><span><a href="{{url_for('home')}}">Market</a></span></li>
+      <li><span class="caret">Dataset</span>
+        <ul class="nested">
+          <li><a href="{{url_for('market')}}">Market</a></li>          
+          <li><a href="{{url_for('duke')}}">Duke</a></li>
+          <li><a href="{{url_for('cuhk')}}">CUHK</a></li>
+        </ul>
+      <li><span class="caret">Person Re-Id</span>
+        <ul class="nested">
+          <li><span class="caret">Search Person</span>
+            <ul class="nested">
+              <li><a href="{{url_for('profile')}}">Person Information</a></li>            
+            </ul>
+          </li>
+          <li><span class="caret"><a href="{{url_for('compareperformance')}}">Compare Performance</a></span>
+            <ul class="nested">
+            <li>Dataset</li>
+            <li>GAN-Models</li>            
+            </ul>
+          </li>        
+          
+        </ul>
+      </li>
+      <li><span class="caret">Transfer</span>
+        <ul class="nested">
+          <li><a href="{{url_for('appearancetransfer')}}">Appearance Transfer</a></li>
+          <li><a href="{{url_for('bgtransfer')}}">Background Transfer</a></li>
+          <li><a href="{{url_for('domaintransfer')}}">Domain Transfer</a></li>
+          <li><a href="{{url_for('styletransfer')}}">Style Transfer</a></li>
+        </ul>
+      </li>  
+    </ul>
+  </li>
+</ul>
+
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+</body>
+</html>
