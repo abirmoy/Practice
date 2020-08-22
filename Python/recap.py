@@ -182,31 +182,31 @@ Created on Fri Jul 26 08:01:10 2019
 #print("Circumference: ", my_circle.get_circumference()) 
 
 ### INHERITANCE ###
-#class Animal():
-#    def __init__ (self):
-#        print('Animal created.')
-#    def who_am_i(self):
-#        print('I am an animal')
-#    def eat(self):
-#        print('I\'m eating.')
-#        
-#class Dog(Animal):
-#    def __init__(self): # INHERITING FROM PREVIOUS OBJECT
-#        Animal.__init__ (self) # PAY ATTENTION ON CALLING RULES
-#        print('Dog created')
-#        
-#    # OVERWRITING METHOD
-#    def eat(self):
-#        print('I am a dog and eating')
-#    # NEW METHOD
-#    def bark(self):
-#        print('Wolf!')
-#
-#mydog = Dog() # ANIMAL CREATED # DOG CREATED
-#mydog.eat() # I AM A DOG AND EATING
-#mydog.who_am_i() # I AM AN ANIMAL
-#mydog.bark() # WOOF
-#
+class Animal():
+    def __init__ (self):
+        print('Animal created.')
+    def who_am_i(self):
+        print('I am an animal')
+    def eat(self):
+        print('I\'m eating.')
+        
+class Dog(Animal):
+    def __init__(self): # INHERITING FROM PREVIOUS OBJECT
+        Animal.__init__ (self) # PAY ATTENTION ON CALLING RULES
+        print('Dog created')
+        
+    # OVERWRITING METHOD
+    def eat(self):
+        print('I am a dog and eating')
+    # NEW METHOD
+    def bark(self):
+        print('Wolf!')
+
+mydog = Dog() # ANIMAL CREATED # DOG CREATED
+mydog.eat() # I AM A DOG AND EATING
+mydog.who_am_i() # I AM AN ANIMAL
+mydog.bark() # WOOF
+
 #myanimal = Animal() # ANIMAL CREATED
 #myanimal.eat() # I AM EATING
 #myanimal.who_am_i() # I AM AN ANIMAL

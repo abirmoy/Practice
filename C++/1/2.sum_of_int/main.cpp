@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    cout << "Program Author: Bapparaz Chandra Das \nID: 2016199123 " << endl;
     int n, sum = 0, m;
     cout << "Enter a Four digit number: "; // Assuming user will always enter 4 digit int
     cin >> n;
